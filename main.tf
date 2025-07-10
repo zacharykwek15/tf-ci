@@ -11,5 +11,5 @@ terraform {
 }
 
 resource "aws_s3_bucket" "s3_tf" {
-  bucket_prefix =  "zh-bucket"   # Set your bucket name here
+  bucket_prefix =  "zh-bucket-3"   # Set your bucket name here
 }
