@@ -3,15 +3,13 @@ provider "aws" {
 }
 
 terraform {
+  required_version = ">= 1.9.0"
+
   backend "s3" {
     bucket = "sctp-ce10-tfstate"
     key    = "zh-terraform.tfstate" #Change this
     region = "ap-southeast-1"
   }
-}
-
-terraform {
-  required_version = ">= 1.9.0"
 }
 
 resource "aws_s3_bucket" "s3_tf" {
